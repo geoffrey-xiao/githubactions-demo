@@ -5,6 +5,12 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
+    """
+    Defines the index route for the Flask application.
+
+    Returns:
+        The rendered index.html template.
+    """
     return render_template("index.html")
 
 
